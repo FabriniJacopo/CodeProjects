@@ -6,3 +6,5 @@ The application in its embrional form needs to be trained by voice of both gende
 Because the pitch extraction is not a particularly good method to determine the gender of the user, in a lot of case the result will be wrong.
 
 All the code written by us is contained in src/com.
+
+This repository contains only the code of the app, if you're interested for any reason in the full project feel free to contact us at jacopo.fabrini@gmail.com or cesaw93@hotmail.it
