@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.genderrecognition.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:text="@string/course_name" />
+    
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:text="@string/first_student" />
+    
+     <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_marginLeft="18dp"
+        android:text="@string/first_matr" />
+     
+     <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:text="@string/second_student" />
+    
+     <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_marginLeft="18dp"
+        android:text="@string/second_matr" />
+     
+     <TextView 
+        android:id="@+id/deviceid" 
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_below="@+id/textView5"
+		android:text="@string/device_id" />
+     
+     <ImageView 
+        android:id="@+id/imview1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="18dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/deviceid" 
+        android:src = "@drawable/qmark_yellow" />
+     
+     <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pitch_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:layout_below="@+id/imview1" />
+     
+     <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/threshold_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/textView7" />
+     
+     <Button 
+        android:id="@+id/btt_classify" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView8"
+        android:layout_marginTop="5dp"
+        android:text="@string/recognition"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+     
+     <Button
+         android:id="@+id/button_female"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/button_male"
+         android:layout_alignRight="@+id/btt_classify"
+         android:layout_below="@+id/btt_classify"
+         android:layout_toRightOf="@+id/textView4"
+         android:text="@string/trainf" />
+
+     <Button
+         android:id="@+id/button_male"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignRight="@+id/textView6"
+         android:layout_below="@+id/btt_classify"
+         android:text="@string/trainm" />
+   	         
+</RelativeLayout>
